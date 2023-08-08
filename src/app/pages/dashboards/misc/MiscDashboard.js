@@ -1,5 +1,5 @@
 import React from 'react';
-import {Grid} from "@mui/material";
+import { Grid } from "@mui/material";
 import CurrencyCalculator from "../../../shared/widgets/CurrencyCalculator";
 
 import SalesOverview from "../../../shared/metrics/SalesOverview";
@@ -30,14 +30,24 @@ import CafeStore1 from "../../../shared/widgets/CafeStore1";
 import LatestAlerts from "../../../shared/widgets/LatestAlerts";
 import DailyFeed from "../../../shared/widgets/DailyFeed";
 
+
+
+import SimpleAccordions from "/Users/swag/Documents/GitHub/blurush-web/src/app/pages/components/mui/Accordions/SimpleAccordions.js";
+import TransitionAlerts from "/Users/swag/Documents/GitHub/blurush-web/src/app/pages/components/mui/Alerts/TransitionAlerts.js"
+import BasicAlerts from 'app/pages/components/mui/Alerts/BasicAlerts';
+
 const MiscDashboard = () => {
     return (
         <Grid container spacing={3.75}>
-        
-        <Grid item xs={12} md={6}>
-                <CurrencyCalculator/>
+            <Grid item xs={12} md={6}>
+                <SimpleAccordions />
             </Grid>
-
+            <Grid item xs={12} md={6}>
+                <TransitionAlerts />
+            </Grid>
+            <Grid item xs={12} md={6}>
+                <BasicAlerts />
+            </Grid>
         </Grid>
     );
 };
